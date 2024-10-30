@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Response {
-    private int ResponseCode;
+    private int ResponseCode; ///< Код ответа от сервиса
     private String ResponseData;
 
     public Response(int code, InputStream inputStream) throws Exception {
