@@ -1,0 +1,146 @@
+\doxysection{org.\+example.\+Weather\+Module.\+Client Class Reference}
+\hypertarget{classorg_1_1example_1_1_weather_module_1_1_client}{}\label{classorg_1_1example_1_1_weather_module_1_1_client}\index{org.example.WeatherModule.Client@{org.example.WeatherModule.Client}}
+
+
+Класс клиента для установления соединения с сервером по HTTP.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_client_ad36cbc0fbf7657334cc253771316bb24}{Client}} (String url)  throws Malformed\+URLException 
+\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_client_a6e93677163b3cc19bdf92efa024b3adf}{Connect}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_client_a65f7d56f8a7d72a640f80aacddd5a558}{Set\+Method}} (String method)
+\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_client_abc29ccf3b236c4534639962eabde7ceb}{Set\+Properties}} (String key, String value)
+\item 
+int \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_client_a351ca1835c5f16e28e53dd22c534baa1}{Get\+Response\+Code}} ()
+\item 
+Input\+Stream \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_client_ad38d175ffd09fd5389cdc9dc9f82b595}{Get\+Input\+Stream}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_client_a38c95e1d5815bbb75dc880904753a61d}{set\+Request\+Property}} (String authorization, String your\+Api\+Key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс клиента для установления соединения с сервером по HTTP. 
+
+Класс {\ttfamily Client} представляет собой клиент для работы с HTTP-\/соединением. Он позволяет устанавливать соединение с указанным URL, настраивать методы и заголовки запросов, а также получать ответы от сервера.
+
+Этот класс отправляет HTTP-\/запрос к API погоды, получает ответ, а затем парсит данные для дальнейшего использования. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_client_ad36cbc0fbf7657334cc253771316bb24}\index{org.example.WeatherModule.Client@{org.example.WeatherModule.Client}!Client@{Client}}
+\index{Client@{Client}!org.example.WeatherModule.Client@{org.example.WeatherModule.Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_client_ad36cbc0fbf7657334cc253771316bb24} 
+org.\+example.\+Weather\+Module.\+Client.\+Client (\begin{DoxyParamCaption}\item[{String}]{url}{}\end{DoxyParamCaption}) throws Malformed\+URLException\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор {\ttfamily Client} инициализирует объект с заданным URL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & Строка, представляющая URL для подключения. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Malformed\+URLException} & если переданный URL имеет неправильный формат. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_client_a6e93677163b3cc19bdf92efa024b3adf}\index{org.example.WeatherModule.Client@{org.example.WeatherModule.Client}!Connect@{Connect}}
+\index{Connect@{Connect}!org.example.WeatherModule.Client@{org.example.WeatherModule.Client}}
+\doxysubsubsection{\texorpdfstring{Connect()}{Connect()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_client_a6e93677163b3cc19bdf92efa024b3adf} 
+void org.\+example.\+Weather\+Module.\+Client.\+Connect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод {\ttfamily Connect} устанавливает HTTP-\/соединение с указанным URL. В случае ошибки при открытии соединения генерируется исключение {\ttfamily Runtime\+Exception}. \Hypertarget{classorg_1_1example_1_1_weather_module_1_1_client_ad38d175ffd09fd5389cdc9dc9f82b595}\index{org.example.WeatherModule.Client@{org.example.WeatherModule.Client}!GetInputStream@{GetInputStream}}
+\index{GetInputStream@{GetInputStream}!org.example.WeatherModule.Client@{org.example.WeatherModule.Client}}
+\doxysubsubsection{\texorpdfstring{GetInputStream()}{GetInputStream()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_client_ad38d175ffd09fd5389cdc9dc9f82b595} 
+Input\+Stream org.\+example.\+Weather\+Module.\+Client.\+Get\+Input\+Stream (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод {\ttfamily Get\+Input\+Stream} возвращает входной поток для чтения данных из ответа HTTP-\/сервера.
+
+\begin{DoxyReturn}{Returns}
+Входной поток данных ответа от сервера. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & если возникла ошибка при получении входного потока. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_client_a351ca1835c5f16e28e53dd22c534baa1}\index{org.example.WeatherModule.Client@{org.example.WeatherModule.Client}!GetResponseCode@{GetResponseCode}}
+\index{GetResponseCode@{GetResponseCode}!org.example.WeatherModule.Client@{org.example.WeatherModule.Client}}
+\doxysubsubsection{\texorpdfstring{GetResponseCode()}{GetResponseCode()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_client_a351ca1835c5f16e28e53dd22c534baa1} 
+int org.\+example.\+Weather\+Module.\+Client.\+Get\+Response\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод {\ttfamily Get\+Response\+Code} возвращает код ответа HTTP-\/сервера.
+
+\begin{DoxyReturn}{Returns}
+Код ответа от сервера (например, 200 для успешного запроса). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & если возникла ошибка при получении кода ответа. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_client_a65f7d56f8a7d72a640f80aacddd5a558}\index{org.example.WeatherModule.Client@{org.example.WeatherModule.Client}!SetMethod@{SetMethod}}
+\index{SetMethod@{SetMethod}!org.example.WeatherModule.Client@{org.example.WeatherModule.Client}}
+\doxysubsubsection{\texorpdfstring{SetMethod()}{SetMethod()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_client_a65f7d56f8a7d72a640f80aacddd5a558} 
+void org.\+example.\+Weather\+Module.\+Client.\+Set\+Method (\begin{DoxyParamCaption}\item[{String}]{method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод {\ttfamily Set\+Method} устанавливает метод HTTP-\/запроса (например, GET, POST).
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Метод HTTP-\/запроса, который будет использоваться (например, "{}\+GET"{} или "{}\+POST"{}). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & если возникла ошибка при установке метода запроса. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_client_abc29ccf3b236c4534639962eabde7ceb}\index{org.example.WeatherModule.Client@{org.example.WeatherModule.Client}!SetProperties@{SetProperties}}
+\index{SetProperties@{SetProperties}!org.example.WeatherModule.Client@{org.example.WeatherModule.Client}}
+\doxysubsubsection{\texorpdfstring{SetProperties()}{SetProperties()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_client_abc29ccf3b236c4534639962eabde7ceb} 
+void org.\+example.\+Weather\+Module.\+Client.\+Set\+Properties (\begin{DoxyParamCaption}\item[{String}]{key}{, }\item[{String}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод {\ttfamily Set\+Properties} устанавливает заголовок HTTP-\/запроса.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Имя заголовка. \\
+\hline
+{\em value} & Значение заголовка. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_client_a38c95e1d5815bbb75dc880904753a61d}\index{org.example.WeatherModule.Client@{org.example.WeatherModule.Client}!setRequestProperty@{setRequestProperty}}
+\index{setRequestProperty@{setRequestProperty}!org.example.WeatherModule.Client@{org.example.WeatherModule.Client}}
+\doxysubsubsection{\texorpdfstring{setRequestProperty()}{setRequestProperty()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_client_a38c95e1d5815bbb75dc880904753a61d} 
+void org.\+example.\+Weather\+Module.\+Client.\+set\+Request\+Property (\begin{DoxyParamCaption}\item[{String}]{authorization}{, }\item[{String}]{your\+Api\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод {\ttfamily set\+Request\+Property} устанавливает заголовок запроса для авторизации.
+
+
+\begin{DoxyParams}{Parameters}
+{\em authorization} & Имя заголовка (например, "{}\+Authorization"{}). \\
+\hline
+{\em your\+Api\+Key} & Значение заголовка (например, API-\/ключ). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/example/\+Weather\+Module/Client.\+java\end{DoxyCompactItemize}

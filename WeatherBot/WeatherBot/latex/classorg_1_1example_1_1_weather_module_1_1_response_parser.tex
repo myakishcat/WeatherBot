@@ -1,0 +1,47 @@
+\doxysection{org.\+example.\+Weather\+Module.\+Response\+Parser Class Reference}
+\hypertarget{classorg_1_1example_1_1_weather_module_1_1_response_parser}{}\label{classorg_1_1example_1_1_weather_module_1_1_response_parser}\index{org.example.WeatherModule.ResponseParser@{org.example.WeatherModule.ResponseParser}}
+
+
+Класс для парсинга JSON-\/ответов от API погоды.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}} \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_response_parser_aaa8ccbb65261dbba246627de57a953d9}{parse\+Weather\+Data}} (String json\+Response)
+\begin{DoxyCompactList}\small\item\em Парсит строку JSON в объект \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для парсинга JSON-\/ответов от API погоды. 
+
+Этот класс предоставляет метод для преобразования строки JSON в объект {\ttfamily \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}} с помощью библиотеки Gson. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_response_parser_aaa8ccbb65261dbba246627de57a953d9}\index{org.example.WeatherModule.ResponseParser@{org.example.WeatherModule.ResponseParser}!parseWeatherData@{parseWeatherData}}
+\index{parseWeatherData@{parseWeatherData}!org.example.WeatherModule.ResponseParser@{org.example.WeatherModule.ResponseParser}}
+\doxysubsubsection{\texorpdfstring{parseWeatherData()}{parseWeatherData()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_response_parser_aaa8ccbb65261dbba246627de57a953d9} 
+static \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}} org.\+example.\+Weather\+Module.\+Response\+Parser.\+parse\+Weather\+Data (\begin{DoxyParamCaption}\item[{String}]{json\+Response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Парсит строку JSON в объект \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}. 
+
+Этот метод принимает строку в формате JSON, представляющую ответ от API погоды, и преобразует её в объект типа {\ttfamily \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}} с помощью библиотеки Gson.
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Response} & Строка JSON, полученная от сервера в ответ на запрос о погоде. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Объект {\ttfamily \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}}, содержащий данные о погоде, полученные из JSON. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Создаем объект Gson для парсинга
+
+\texorpdfstring{$<$}{<} Преобразуем JSON в объект \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/example/\+Weather\+Module/\mbox{\hyperlink{_response_parser_8java}{Response\+Parser.\+java}}\end{DoxyCompactItemize}

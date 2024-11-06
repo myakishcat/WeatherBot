@@ -1,0 +1,45 @@
+\doxysection{org.\+example.\+Weather\+Module.\+Module Class Reference}
+\hypertarget{classorg_1_1example_1_1_weather_module_1_1_module}{}\label{classorg_1_1example_1_1_weather_module_1_1_module}\index{org.example.WeatherModule.Module@{org.example.WeatherModule.Module}}
+
+
+Модуль для запроса и обработки данных погоды.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}} \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_module_a490948170606e45a7439d4e4501213ae}{Request}} ()
+\begin{DoxyCompactList}\small\item\em Выполняет запрос к API погоды и возвращает объект \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Модуль для запроса и обработки данных погоды. 
+
+Этот класс отправляет HTTP-\/запрос к API погоды, получает ответ, а затем парсит данные для дальнейшего использования. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_module_a490948170606e45a7439d4e4501213ae}\index{org.example.WeatherModule.Module@{org.example.WeatherModule.Module}!Request@{Request}}
+\index{Request@{Request}!org.example.WeatherModule.Module@{org.example.WeatherModule.Module}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_module_a490948170606e45a7439d4e4501213ae} 
+\mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}} org.\+example.\+Weather\+Module.\+Module.\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Выполняет запрос к API погоды и возвращает объект \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}. 
+
+Этот метод формирует запрос к внешнему API погоды, отправляет его, получает ответ и парсит данные о погоде в объект \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}.
+
+\begin{DoxyReturn}{Returns}
+Объект \doxylink{classorg_1_1example_1_1_weather_module_1_1_weather_data}{Weather\+Data}, содержащий информацию о текущей погоде. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & Если произошла ошибка при выполнении запроса или обработке данных. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/example/\+Weather\+Module/\mbox{\hyperlink{_module_8java}{Module.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\doxysection{org.\+example.\+Bot.\+Bot Class Reference}
+\hypertarget{classorg_1_1example_1_1_bot_1_1_bot}{}\label{classorg_1_1example_1_1_bot_1_1_bot}\index{org.example.Bot.Bot@{org.example.Bot.Bot}}
+
+
+Класс для работы с Telegram ботом, предоставляющим информацию о погоде.  
+
+
+Inheritance diagram for org.\+example.\+Bot.\+Bot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1example_1_1_bot_1_1_bot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classorg_1_1example_1_1_bot_1_1_bot_a8c5cb51ccdaa62d6d34254fce68476bc}{get\+Bot\+Username}} ()
+\begin{DoxyCompactList}\small\item\em Получение имени пользователя бота. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1example_1_1_bot_1_1_bot_a61ec4746bdea160c9653ab7d68da800a}{get\+Bot\+Token}} ()
+\begin{DoxyCompactList}\small\item\em Получение токена бота. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_bot_1_1_bot_a8253b0c2e47c6cf27610d5733224be77}{on\+Update\+Received}} (Update update)
+\begin{DoxyCompactList}\small\item\em Обработка обновлений от пользователей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_bot_1_1_bot_ae395bc56460a60d3d1bb1cbd7cb27a58}{send\+Text}} (Long receiver, String text)
+\begin{DoxyCompactList}\small\item\em Отправка текстового сообщения пользователю. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для работы с Telegram ботом, предоставляющим информацию о погоде. 
+
+Этот класс расширяет {\ttfamily Telegram\+Long\+Polling\+Bot} и реализует методы для обработки обновлений от пользователей, а также отправки сообщений с информацией о текущей погоде. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1example_1_1_bot_1_1_bot_a61ec4746bdea160c9653ab7d68da800a}\index{org.example.Bot.Bot@{org.example.Bot.Bot}!getBotToken@{getBotToken}}
+\index{getBotToken@{getBotToken}!org.example.Bot.Bot@{org.example.Bot.Bot}}
+\doxysubsubsection{\texorpdfstring{getBotToken()}{getBotToken()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_bot_1_1_bot_a61ec4746bdea160c9653ab7d68da800a} 
+String org.\+example.\+Bot.\+Bot.\+get\+Bot\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение токена бота. 
+
+Этот метод возвращает токен, который используется для аутентификации бота в Telegram API.
+
+\begin{DoxyReturn}{Returns}
+Токен бота для доступа к API Telegram. 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_bot_1_1_bot_a8c5cb51ccdaa62d6d34254fce68476bc}\index{org.example.Bot.Bot@{org.example.Bot.Bot}!getBotUsername@{getBotUsername}}
+\index{getBotUsername@{getBotUsername}!org.example.Bot.Bot@{org.example.Bot.Bot}}
+\doxysubsubsection{\texorpdfstring{getBotUsername()}{getBotUsername()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_bot_1_1_bot_a8c5cb51ccdaa62d6d34254fce68476bc} 
+String org.\+example.\+Bot.\+Bot.\+get\+Bot\+Username (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение имени пользователя бота. 
+
+Этот метод возвращает имя пользователя бота, которое будет использоваться при взаимодействии с Telegram API.
+
+\begin{DoxyReturn}{Returns}
+Имя пользователя бота в Telegram. 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_bot_1_1_bot_a8253b0c2e47c6cf27610d5733224be77}\index{org.example.Bot.Bot@{org.example.Bot.Bot}!onUpdateReceived@{onUpdateReceived}}
+\index{onUpdateReceived@{onUpdateReceived}!org.example.Bot.Bot@{org.example.Bot.Bot}}
+\doxysubsubsection{\texorpdfstring{onUpdateReceived()}{onUpdateReceived()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_bot_1_1_bot_a8253b0c2e47c6cf27610d5733224be77} 
+void org.\+example.\+Bot.\+Bot.\+on\+Update\+Received (\begin{DoxyParamCaption}\item[{Update}]{update}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Обработка обновлений от пользователей. 
+
+Этот метод вызывается при получении обновления (например, нового сообщения) от пользователя. Он извлекает текст сообщения и информацию о пользователе, а затем получает данные о погоде с помощью модуля погоды.
+
+
+\begin{DoxyParams}{Parameters}
+{\em update} & Объект, содержащий информацию о сообщении и пользователе. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Логируем имя пользователя и текст сообщения.\Hypertarget{classorg_1_1example_1_1_bot_1_1_bot_ae395bc56460a60d3d1bb1cbd7cb27a58}\index{org.example.Bot.Bot@{org.example.Bot.Bot}!sendText@{sendText}}
+\index{sendText@{sendText}!org.example.Bot.Bot@{org.example.Bot.Bot}}
+\doxysubsubsection{\texorpdfstring{sendText()}{sendText()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_bot_1_1_bot_ae395bc56460a60d3d1bb1cbd7cb27a58} 
+void org.\+example.\+Bot.\+Bot.\+send\+Text (\begin{DoxyParamCaption}\item[{Long}]{receiver}{, }\item[{String}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Отправка текстового сообщения пользователю. 
+
+Этот метод отправляет текстовое сообщение пользователю по его ID в Telegram.
+
+
+\begin{DoxyParams}{Parameters}
+{\em receiver} & Идентификатор чата, которому будет отправлено сообщение. \\
+\hline
+{\em text} & Текст сообщения, которое будет отправлено пользователю. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & Если произошла ошибка при отправке сообщения. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/example/\+Bot/\mbox{\hyperlink{_bot_8java}{Bot.\+java}}\end{DoxyCompactItemize}

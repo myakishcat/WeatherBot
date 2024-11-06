@@ -1,0 +1,84 @@
+\doxysection{org.\+example.\+Weather\+Module.\+Response Class Reference}
+\hypertarget{classorg_1_1example_1_1_weather_module_1_1_response}{}\label{classorg_1_1example_1_1_weather_module_1_1_response}\index{org.example.WeatherModule.Response@{org.example.WeatherModule.Response}}
+
+
+Класс для ответа, получаемого от сервера Класс обрабатывает ответ, получая код ответа и данные, если код ответа успешен.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_response_a3b0affbc23d13ca3669fba2981de2ecd}{Response}} (int code, Input\+Stream input\+Stream)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Конструктор класса, принимающий код ответа и поток данных. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_response_a39f9027e3ef0c74e9914d52a29cb91d8}{get\+Response\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Получение кода ответа от сервера. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1example_1_1_weather_module_1_1_response_a8e1c5e5986474782050def7febb0a6e3}{get\+Response\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Получение данных ответа. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для ответа, получаемого от сервера Класс обрабатывает ответ, получая код ответа и данные, если код ответа успешен. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_response_a3b0affbc23d13ca3669fba2981de2ecd}\index{org.example.WeatherModule.Response@{org.example.WeatherModule.Response}!Response@{Response}}
+\index{Response@{Response}!org.example.WeatherModule.Response@{org.example.WeatherModule.Response}}
+\doxysubsubsection{\texorpdfstring{Response()}{Response()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_response_a3b0affbc23d13ca3669fba2981de2ecd} 
+org.\+example.\+Weather\+Module.\+Response.\+Response (\begin{DoxyParamCaption}\item[{int}]{code}{, }\item[{Input\+Stream}]{input\+Stream}{}\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса, принимающий код ответа и поток данных. 
+
+Если код ответа успешен (200), считывает данные из потока. Если код ответа не успешен, генерирует исключение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & Код ответа от сервера. \\
+\hline
+{\em input\+Stream} & Поток данных, полученных от сервера. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Если код ответа не успешен или ошибка при чтении данных. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_response_a39f9027e3ef0c74e9914d52a29cb91d8}\index{org.example.WeatherModule.Response@{org.example.WeatherModule.Response}!getResponseCode@{getResponseCode}}
+\index{getResponseCode@{getResponseCode}!org.example.WeatherModule.Response@{org.example.WeatherModule.Response}}
+\doxysubsubsection{\texorpdfstring{getResponseCode()}{getResponseCode()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_response_a39f9027e3ef0c74e9914d52a29cb91d8} 
+int org.\+example.\+Weather\+Module.\+Response.\+get\+Response\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение кода ответа от сервера. 
+
+Этот метод возвращает код ответа, полученный от сервера.
+
+\begin{DoxyReturn}{Returns}
+Код ответа от сервера. 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_weather_module_1_1_response_a8e1c5e5986474782050def7febb0a6e3}\index{org.example.WeatherModule.Response@{org.example.WeatherModule.Response}!getResponseData@{getResponseData}}
+\index{getResponseData@{getResponseData}!org.example.WeatherModule.Response@{org.example.WeatherModule.Response}}
+\doxysubsubsection{\texorpdfstring{getResponseData()}{getResponseData()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_weather_module_1_1_response_a8e1c5e5986474782050def7febb0a6e3} 
+String org.\+example.\+Weather\+Module.\+Response.\+get\+Response\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение данных ответа. 
+
+Этот метод возвращает строку, содержащую данные, полученные от сервера.
+
+\begin{DoxyReturn}{Returns}
+Строка с данными ответа от сервера. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/example/\+Weather\+Module/\mbox{\hyperlink{_response_8java}{Response.\+java}}\end{DoxyCompactItemize}
